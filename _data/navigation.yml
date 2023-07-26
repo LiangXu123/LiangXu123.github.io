@@ -2,7 +2,5 @@
 main:
   - title: "Publications"
     url: /publications/
-  - title: "Research"
-    url: /research/
   - title: "Patent&Awards"
     url: /patent/
