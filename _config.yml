@@ -86,7 +86,7 @@ author:
   pubmed: #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar: #"http://yourfullgooglescholarurl.com"
   email: "xuliang123@alumni.hust.edu.cn"
-  researchgate: # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate: "https://www.researchgate.net/scientific-contributions/Liang-Xu-2164345325"# example: "https://www.researchgate.net/profile/yourprofile"
   uri:
   bitbucket:
   codepen:
@@ -100,7 +100,7 @@ author:
   instagram:
   impactstory: #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm:
-  linkedin: "eric-koepcke"
+  linkedin: #"eric-koepcke"
   orcid: #"http://orcid.org/yourorcidurl"
   pinterest:
   soundcloud:

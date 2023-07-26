@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-**ABOUT ME**
+**ABOUT**
 
 I am working at SenseTime Technology as a computer vision researcher.
 
