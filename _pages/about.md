@@ -16,9 +16,9 @@ Temporal Action Detection and Action Recognition, Object & Keypoint Detection.
 
 **EDUCATION**
 
-- I received my M.S(research-based) in Information & Communication Engineering from [Huazhong University of Science and Technology (HUST)](http://english.hust.edu.cn/) in 2019, advised by [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
+- I received my M.S(research-based) in Information & Communication Engineering from [Huazhong University of Science and Technology (HUST)](http://english.hust.edu.cn/) in 2019, advised by [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).    GPA:3.4/4
 
-- I received my B.S in Biomedical-Engineering from [Xidian University](https://en.xidian.edu.cn/) in 2016.
+- I received my B.S in Biomedical-Engineering from [Xidian University](https://en.xidian.edu.cn/) in 2016.  GPA:3.0(overall),3.4(last two years)/4, rank: 7/38
 
 **CONTACT**
 
