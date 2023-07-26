@@ -11,7 +11,7 @@ redirect_from:
 
 I am working at SenseTime Technology as a computer vision researcher.
 
-My research interests include: Temporal Action Detection and Action Recognition, Object / Keypoint Detection.
+My research interests include: Temporal Action Detection and Action Recognition, Object & Keypoint Detection.
 
 **EDUCATION**
 
