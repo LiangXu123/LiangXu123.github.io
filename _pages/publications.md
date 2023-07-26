@@ -1,16 +1,12 @@
 ---
 layout: archive
 title: "Publications"
-permalink: /publications/
+permalink: /research/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+## Publications
 
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+- [**"Cascaded Boundary Network for High-Quality Temporal Action Proposal Generation"**](https://ieeexplore.ieee.org/abstract/document/8852682)  
+**Liang Xu**, Xinggang Wang, Wenyu Liu, Bin Feng. **@2019**  
+IEEE Transactions on Circuits and Systems for Video Technology
