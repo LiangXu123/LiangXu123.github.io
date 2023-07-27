@@ -20,7 +20,8 @@ Temporal Action Detection and Action Recognition, Object & Keypoint Detection.
 GPA:3.4/4
 
 - I received my B.S in Biomedical-Engineering from [Xidian University](https://en.xidian.edu.cn/) in 2016.  
-GPA:3.0(overall),3.4(last two years)/4, rank: 7/38
+GPA:3.0(overall),3.4(last two years)/4, rank: 7/38  
+Related Courses: Digital Image Processing(98), Random Signal Processing(98), Digital Signal Process(88),Signals and Systems(86)
 
 **CONTACT**
 
