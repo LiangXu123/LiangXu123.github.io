@@ -14,7 +14,7 @@ redirect_from:
 - My research interests include:
 Temporal Action Detection/Recognition, Object & Keypoint Detection.
 
-- I am looking for a PhD position in 2023 or 2024.</font>
+- <font color="red">I am looking for a PhD position in 2023 or 2024.</font>
 
 **EDUCATION**
 
