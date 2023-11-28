@@ -9,13 +9,12 @@ redirect_from:
 ---
 **ABOUT**
 
-- I am looking for a PhD position in 2024.
+- <font color='red'> I am looking for a PhD position in 2024. </font>
 - My research interests include:
   Computer Vision, Video Understanding, Action Detection & Recognition, Object & Keypoint Detection.
 
-**CONTACT**
-
-- Curriculum Vitae: [**PDF HERE**](https://LiangXu123.github.io/files/CV_LiangXu.pdf)
+**CONTACT:**
+: [**Curriculum Vitae**](https://LiangXu123.github.io/files/CV_LiangXu.pdf)
 
 **EDUCATION**
 
