@@ -11,10 +11,9 @@ redirect_from:
 
 - <font color='red'> I am looking for a PhD position in 2024. </font>
 - My research interests include:
-  Computer Vision, Video Understanding, Action Detection & Recognition, Object & Keypoint Detection.
+  Computer Vision, Video Understanding, Action Detection & Recognition.
 
-**CONTACT:**
-: [**Curriculum Vitae**](https://LiangXu123.github.io/files/CV_LiangXu.pdf)
+**Curriculum Vitae:**[ **PDF**](https://LiangXu123.github.io/files/CV_LiangXu.pdf)
 
 **EDUCATION**
 
