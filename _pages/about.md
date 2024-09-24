@@ -25,7 +25,8 @@ redirect_from:
 - 📫 Email: xuliang123@alumni.hust.edu.cn
 
 # 🔥 News
-- _2024.02_: &nbsp;🎉🎉 - - papers accepted. See you in -.
+<!-- - _2024.02_: &nbsp;🎉🎉 - - papers accepted. See you in -. -->
+- _2024.08_: &nbsp;🎉🎉 - - I am looking for a PhD position in 2024/2025.
 
 # 📝 Publications
 
@@ -60,7 +61,7 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 # 📖 Educations
 
 - _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, HUST, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
-- _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University.
+- _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University, Supervisor: [Liyu Huang](https://ieeexplore.ieee.org/author/37086080447)
 
 # 💻 Research Experience
 
