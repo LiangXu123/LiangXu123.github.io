@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="GVC-Seg: Training Free 3D Instance Segmentation via  Geometric Visual Correspondence.">
+  <meta name="keywords" content="MaskRCNN, OWIS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UDOS</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+
+
+
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size:38px"> GVC-Seg: Training Free 3D Instance Segmentation <br> via  Geometric Visual Correspondence </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://liangxu123.github.io/">Liang Xu<sup>1</sup>,</a> </span>
+              <span class="author-block">
+                <a href="">Fangjing Wang<sup>1</sup>, </a></span>
+              <span class="author-block">
+                <a href="https://ieeexplore.ieee.org/author/37086284120">Jinyu Yang<sup>2</sup>, </a> </span> <br>
+            <span class="author-block">
+              <a href="https://www.sustech.edu.cn/en/faculties/zhengfeng.html">Feng Zheng<sup>1</sup>, </a></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Southern University of Science and Technology</span>
+            <span class="author-block"><sup>2</sup>tapall.ai</span>
+          </div>
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>,</span>
+          </div> -->
+          <!-- <h2 class="title is-4">2023</h2> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="../files/papers/UDOS.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2303.05503"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=pYvig8rL_1s"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/tarun005/UDOS"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span> Code </span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/1SjWUcuSvYMM5rPPd4aQhK0jo1IHbCJbT?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/UDOS_IntroPic.png">
+      <p>
+        Comparison of standard Mask-RCNN, MCG and UDOS for open-world instance segmentation. While standard top-down architectures like MaskRCNN suffer from seen-class bias leading to several missed objects, bottom-up methods result in noisy over-segmentation. UDOS combines the best of both these approaches by using bottom-up proposals as weak supervision inside top-down architectures.
+      </p>
+    </div>
+
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds"> 
+        <!-- <h2 class="title is-3">UDOS for open-world instance segmentation/h2> -->
+        <div class="content has-text-justified">
+
+          <p>
+            <b>Got only a few seconds? here's a tl;dr!</b>: We present <b>UDOS</b> for instance segmentation in an open-world by leveraging weak-supervision from unsupervised bottom-up segmentation algorithm like selective search. We first predict part masks corresponding to objects, followed by affinity-based grouping and refinement modules to predict full-instance masks for both seen and unseen objects in an image. We achieve significantly better results compared to existing SOTA on open-world instance segmentation on several datasets!
+          </p>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds"> 
+        <h2 class="title is-3">Summary of results using UDOS for OWIS</h2>
+        <div class="content has-text-justified">
+        <figure>
+          <img src="static/images/QualtResults.png" width=850> 
+          <figcaption>Comparing between classical MaskRCNN training and UDOS, we note that many classes like {jug, tissue papers, tie, eyeglasses}, {knife, cutting board, vegetables, glass}, {shoes, helmet, gloves}, {ostrich} and {dishwasher, faucet} among others which are not part of VOC-classes are missed by standard Mask-RCNN training, but detected using UDOS. The third row shows predictions made <i>only</i> by UDOS and missed by Mask-RCNN.</figcaption>
+        </figure>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light" >
+  <div class="hero-body" style="padding-top: unset" >
+    <div class="container is-max-desktop" >
+      <div id="results-carousel" class="carousel results-carousel" >
+    <div class="column is-centered has-text-centered" >
+        <img src="static/images/377946.gif" alt="online rabbit" width=650 />
+      </div>
+      <div class="column is-centered has-text-centered" >
+        <img src="static/images/396338.gif" alt="online rabbit" width=650/>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/1335.gif" alt="online rabbit" width=650/>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/3925.gif" alt="online rabbit" width=650/>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/384668.gif" alt="online rabbit" width=650/>
+      </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds"> 
+        <h2 class="title is-3">UDOS overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>What is Open-world Instance Segmentation (OWIS)?</b> In OWIS, we need to detect and predict object masks for both seen (annotated) and unseen (unannotated) object classes in an image. For example, MS-COCO only has mask annotation for 80 object categories, but at test-time we need to predict masks for objects beyond these 80 categories. Efficient open-world models significantly improve the performance of real-world deployment of visual perception systems.
+          </p>
+            
+          <p>
+            <b>What's wrong with Mask-RCNN?</b> Nothing much. But, instance segmentation frameworks such as Mask R-CNN often couple recognition and segmentation too closely to the extent that they are unable to segment out objects not labeled in the training data. This problem is exacerbated when these frameworks are trained with non-exhaustive annotations like MS-COCO, where out-of-taxonomy objects are perceived as negatives (background). A prediction made on these objects are punished by the top-down supervision. For example, in this picture, many classes like hat, plates and paper are missed because they are not part of VOC taxonomy. 
+            <figure>
+              <img src="static/images/intro_pic_mrcnn.png" width=350 class="center"> 
+              <figcaption>Missed open-world objects using MaskRCNN.</figcaption>
+            </figure>
+            
+          </p>
+
+          <p>
+            <b>What does UDOS do?</b> We make two key contributions in UDOS. First, we observe that unsupervised bottom-up segmentation algorithms such as Selective Search, which have been <i>de-facto</i> method for proposal generation before the tsumani called deep learning, are inherently class-agnostic and perfectly suitable for the problem of open-world detection. They provide far more <i> coverage</i> (in terms of objects) in the image since they only rely on low-level cues such as shape, size, color, texture and brightness between pixels to generate candidate object masks. So we generate candidate object masks for all images in MS-COCO and add these as augmented supervision to train the top-down network, in addition to the already available annotated masks for a subset of object.
+          </p>
+          <figure>
+            <img src="static/images/problemFig.png" width=850> 
+            <figcaption>UDOS pipeline consisting of part-mask prediction, grouping and refinement modules.</figcaption>
+          </figure>
+
+          <p>
+            <b> So can this solve the problem? </b> Not quite. Look at the figure below: these proposal generation methods (MCG here) are unsupervised (which is good because it has no class-bias) but they are also prone to over-segmentation (which is bad since they can only predict <i>parts</i> of object and not full objects - like head, torso and hands separately instead of person as a whole). 
+            <figure>
+              <img src="static/images/intro_pic_mcg.png" width=350 class="center"> 
+              <figcaption>Bottom-up segmentation methods generally result in noisy over-segmentations.</figcaption>
+            </figure>
+            
+            So our second contribution is to design a grouping method and a refinement module to cluster these part masks into larger <i>object</i> masks corresponding to the objects. The grouping module is based on agglomerative clustering the part-masks based on pairwise affinities, to solve the following objective.
+            <img src="static/images/agg_clust.png" width=350 class="center"> 
+          </p>
+            
+          <p>
+          Put in words, given a set of part-masks along with their pairwise affinity scores, our clustering algorithm is employed to produce a partition of the masks that maximizes the average affinities within each resulting partition. So all the parts of body might be merged into a single person mask, the legs and body of a chair might be merged into a single mask for chair and soon. Our refinement modules then further refines the merged masks along with predicting an objectness score for each of the predicted proposals. Now, equipped with a richer supervision and effective modules for clustering and refining part-masks, UDOS is much better at predicting both seen and unseen objects during test-time. 
+          <figure>
+            <img src="static/images/intro_pic_udos.png" width=350 class="center"> 
+            <figcaption>UDOS efficiently detects many unseen classes in open world when trained only using VOC-categories from COCO, while adding negligible inference time overhead</figcaption>
+          </figure>
+            </p>
+
+          <p>
+            <b>How does UDOS compare to SOTA?</b> UDOS much better than several SOTA methods for OWIS, like OLN, LDET and GGN. It beats GGN by 3% Box-AR100 and 2% Mask-AR100 on the competetive setting of VOC to NonVOC transfer from COCO dataset. On cross-dataset setting, UDOS performs much better than previous works on several datasets like UVO, ADE20K and OpenImages. Please refer to our <a href="https://arxiv.org/abs/2303.05503">paper</a> for additional ablations and qualitative results!
+          </p>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            tl;dr: We present UDOS for instance segmentation in an open-world by leveraging weak-supervision from unsupervised bottom-up segmentation algorithm to first predict part masks corresponding to objects, followed by the proposed grouping and refinement modules to predict full-instance masks for both seen and unseen objects in an image. 
+          </p>
+          <p>
+            Many top-down architectures for instance segmentation achieve significant success when trained and tested on pre-defined closed-world taxonomy. However, when deployed in the open world, they exhibit notable bias towards seen classes and suffer from significant performance drop. In this work, we propose a novel approach for open world instance segmentation called UDOS (<strong>U</strong>p-<strong>D</strong>own <strong>O</strong>pen-world <strong>S</strong>egmentation) that combines classical bottom-up segmentation algorithms with a top-down learning framework. 
+            UDOS first predicts parts of objects from a top-down network trained using weak supervision from bottom-up segmentations. The bottom-up segmentations are class-agnostic and do not overfit to specific taxonomies. The part-masks are then fed into affinity-based grouping and refinement modules to predict robust instance-level segmentations. UDOS enjoys both the speed and efficiency from the top-down architectures and the generalization ability to unseen categories from bottom-up supervision.
+            We validate the strengths of UDOS on multiple cross-category as well as cross-dataset transfer tasks from 5 challenging datasets including MS-COCO, LVIS, ADE20k, UVO and OpenImages, achieving significant improvements over state-of-the-art across the board. Our code and models will be released. 
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="hr"></div> -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds"> 
+        <h2 class="title is-3">Visualizing output after each stage of UDOS</h2>
+        <div class="content has-text-justified">
+          <p> 
+            The masks in last two columns correspond to true-positives with respect to the ground truth. Note that classes such as pot, van, elephant, and auto-rickshaw do not belong to any of the training VOC categories. Also note that the merged outputs might be noisy due to the imperfection in the initial part-mask supervision used, which are corrected by our refinement layer.
+          </p>
+        </div>
+        <img src="static/images/Clustering.png" width=850> 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Results. -->
+    <div class="columns is-centered ">
+      <div class="column">
+        <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Results</h2>
+          <p>
+            We show open-world instance segmentation results using UDOS using wide range of experiments covering both cross-category as well as cross-dataset settings.
+          </p>
+          <br>
+        <h3 class="title is-4 has-text-centered">Cross-Category (VOC to NonVOC)</h3>
+        
+        <div class="content has-text-justified">
+          <p>
+            We achieve new SOTA on the cross-category setting on COCO using 20 VOC classes for training and testing on 60 NonVOC classes.
+          </p>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="static/images/voc2nvoc.png" class="center" width=850>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered">Cross-Dataset (COCO to UVO, ADE20K, OpenImages)</h3>
+        <div class="content has-text-justified">
+          <p>
+            Even on a more realistic setting of cross-dataset evaluation, we achieve SOTA or comparable to SOTA on all datasets.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="static/images/coco2uvo.png" class="center" width=1050>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @article{
+        author    = {},
+        title     = {},
+        journal   = {},
+        year      = {},
+      },
+</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            <!-- This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. -->
+            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template and <a href="https://oasisyang.github.io/">Yang Fu</a> for further improving it as part of <a href="https://oasisyang.github.io/semi-pose/">semi-pose</a> project.
+          </p>
+        </div>
+      </div>
+          <p></p>
+        </div>
+      </div>
+</footer>
+
+</body>
+</html>
