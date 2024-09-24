@@ -29,12 +29,12 @@ redirect_from:
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2022</div><img src='images/2022-IJCAI-SparseX.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TCSVT 2019</div><img src='images/2019-TCSVT-CBN.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Learning Sparse Interpretable Features For NAS Scoring From Liver Biopsy Images](https://www.ijcai.org/proceedings/2022/0220.pdf) <br> 
-**Chong Yin**, Siqi Liu, Vincent Wai-Sun Wong, Pong C. Yuen <br> 
-International Joint Conference on Artificial Intelligence (IJCAI), 2022. <br> 
-[**PDF**](https://www.ijcai.org/proceedings/2022/0220.pdf) [**Video**](https://www.ijcai.org/proceedings/2022/video/220) <br> 
+[Cascaded Boundary Network for High-Quality Temporal Action Proposal Generation](https://ieeexplore.ieee.org/document/8852682) <br> 
+**Liang Xu**, Xinggang Wang, Wenyu Liu, Bin Feng. <br> 
+IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <br> 
+[**PDF**](https://ieeexplore.ieee.org/document/8852682)<br> 
 </div>
 </div>
 
@@ -50,18 +50,18 @@ International Joint Conference on Artificial Intelligence (IJCAI), 2022. <br>
 
 # 🎖 Patents
 
-- 一种基于动作边界概率的级联动作候选框生成方法与系统  
-**Liang Xu**, Bin Feng. @2019
-- 一种基于计算机视觉技术的道路病害检测方法  
-**Liang Xu**, ChengKai Zhu, WeiWu. @2022
+- - _2019_  一种基于动作边界概率的级联动作候选框生成方法与系统  
+**Liang Xu**, Bin Feng.
+- - _2021_  一种基于计算机视觉技术的道路病害检测方法  
+**Liang Xu**, ChengKai Zhu, WeiWu.
 
 
 
 # 📖 Educations
 
-- _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, Huazhong University of Science and Technology, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
+- _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, HUST, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
 - _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University.
 
 # 💻 Research Experience
 
-- _2024.04 - 2024.12_, Research Assistant, Southern University of Science and Technology, School of Computer Science., Supervisor: [Feng Zheng](https://www.sustech.edu.cn/en/faculties/zhengfeng.html)
+- _2024.04 - 2024.12_, Research Assistant, School of Computer Science, SUST, Supervisor: [Feng Zheng](https://www.sustech.edu.cn/en/faculties/zhengfeng.html)
