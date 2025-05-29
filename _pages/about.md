@@ -57,16 +57,16 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 
 # 🎖 Patents
 
-- - _2019_  “A Cascaded Action Proposal Generation Method and System Based on Action Boundary Probability”<一种基于动作边界概率的级联动作候选框生成方法与系统>
+- _2019_  “A Cascaded Action Proposal Generation Method and System Based on Action Boundary Probability”<一种基于动作边界概率的级联动作候选框生成方法与系统>
 **Liang Xu**, Bin Feng.
-- - _2021_  “Computer Vision-Based Method for Detecting Road Surface Defects”<一种基于计算机视觉技术的道路病害检测方法 > 
+- _2021_  “Computer Vision-Based Method for Detecting Road Surface Defects”<一种基于计算机视觉技术的道路病害检测方法 > 
 **Liang Xu**, ChengKai Zhu, WeiWu.
 
 
 
 # 📖 Educations
 
-- _2025.03 - PhD Student in School of Engineering and Computer Science, Victoria University of Wellington, Supervisor: [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
+- 2025.03 - PhD Student in School of Engineering and Computer Science, Victoria University of Wellington, Supervisor: [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
 - _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, HUST, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
 - _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University, Supervisor: [Liyu Huang](https://ieeexplore.ieee.org/author/37086080447)
 

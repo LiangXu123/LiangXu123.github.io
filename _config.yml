@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "LiangXu(徐亮)"
   avatar           : "images/profile.JPG"
-  bio              : "Huazhong University of Science and Technology"
-  location         : "Shenzhen, China"
+  bio              : "Victoria University of Wellington"
+  location         : "Wellington, New Zealand"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com.hk/citations?hl=zh-CN&view_op=list_works&gmla=ALUCkoU4UPG124K0z7Q3meysofq55tMHExvWKIIKtvKD6VE1mIqr-Rt93dzmNZ_kKPurw0JrkPkYq15F1tjFoupSSj1tp2A&user=TwLAFlUAAAAJ"
@@ -37,15 +37,15 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "LiangXu123"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : #"亮-徐-69ab771b3"
+  linkedin         : "亮-徐-1b0bb3340"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
+  orcid            : "https://orcid.org/0009-0008-8302-437X"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
