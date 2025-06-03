@@ -47,26 +47,26 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 
 
 
-# 🎖 Honors and Awards
+<!-- # 🎖 Honors and Awards
 
 - _2017.12_ won 5th/127 Place in "Pig Face Recognition Competition National Final, JD Inc", Beijing
 - _2017_ First Prize Academic Scholarship, HUST, Wuhan
 - _2016_ First Prize Academic Scholarship, HUST, Wuhan
-- _2015_ Provincial award of Excellence(College Students Innovation and Entrepreneurship Project), XDU, Xi'an
+- _2015_ Provincial award of Excellence(College Students Innovation and Entrepreneurship Project), XDU, Xi'an -->
 
 
-# 🎖 Patents
+<!-- # 🎖 Patents
 
 - _2019_  “A Cascaded Action Proposal Generation Method and System Based on Action Boundary Probability”<一种基于动作边界概率的级联动作候选框生成方法与系统>
 **Liang Xu**, Bin Feng.
 - _2021_  “Computer Vision-Based Method for Detecting Road Surface Defects”<一种基于计算机视觉技术的道路病害检测方法 > 
-**Liang Xu**, ChengKai Zhu, WeiWu.
+**Liang Xu**, ChengKai Zhu, WeiWu. -->
 
 
 
 # 📖 Educations
 
-- 2025.03 - PhD Student in School of Engineering and Computer Science, Victoria University of Wellington, Supervisor: [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
+- 2025.03 - Present, PhD Student in School of Engineering and Computer Science, Victoria University of Wellington, Supervisor: [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
 - _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, HUST, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
 - _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University, Supervisor: [Liyu Huang](https://ieeexplore.ieee.org/author/37086080447)
 
