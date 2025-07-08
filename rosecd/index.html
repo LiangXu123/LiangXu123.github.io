@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="GVC-Seg: Training Free 3D Instance Segmentation via  Geometric Visual Correspondence.">
+        content="Robust One-step Speech Enhancement via Consistency Distillation.">
   <meta name="keywords" content="MaskRCNN, OWIS">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GVC-Seg</title>
@@ -49,21 +49,18 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title" style="font-size:38px"> GVC-Seg: Training Free 3D Instance Segmentation <br> via  Geometric Visual Correspondence </h1>
+          <h1 class="title is-1 publication-title" style="font-size:38px"> Robust One-step Speech Enhancement via Consistency Distillation (ROSE-CD) </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://liangxu123.github.io/">Liang Xu<sup>1</sup>,</a> </span>
               <span class="author-block">
-                <a href="">Fangjing Wang<sup>1</sup>, </a></span>
-              <span class="author-block">
-                <a href="https://ieeexplore.ieee.org/author/37086284120">Jinyu Yang<sup>2</sup>, </a> </span> <br>
+                <a href="https://ieeexplore.ieee.org/author/144802245092307">Longfei Felix Yan<sup>1</sup>, </a> </span> <br>
             <span class="author-block">
-              <a href="https://www.sustech.edu.cn/en/faculties/zhengfeng.html">Feng Zheng<sup>1</sup>, </a></span>
+              <a href="https://ieeexplore.ieee.org/author/38559192800">Feng Zheng<sup>1</sup>, </a></span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Southern University of Science and Technology</span>
-            <span class="author-block"><sup>2</sup>tapall.ai</span>
+            <span class="author-block"><sup>1</sup>School of Engineering and Computer Science, Victoria University of Wellington, Wellington 6140, New Zealand</span>
           </div>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>,</span>
@@ -95,7 +92,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/LiangXu123/GVC-Seg"
+                <a href="https://github.com/LiangXu123/Robust-One-step-Speech-Enhancement-via-Consistency-Distillation-ROSE-CD-"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -142,7 +139,19 @@
         <div class="content has-text-justified">
 
           <p>
-            We present <b>GVC-Seg</b> , a novel training-free 3D instance segmentation framework. By combining 3D geometric and 2D visual cues in a training-free manner, GVC-Seg prompts more reliable proposal generation and selection, which alleviates the confidence bias of multi-scale, multi-source proposals.
+            We present <b>ROSE-CD</b> :Robust One-step Speech Enhancement via Consistency
+            Distillation, a novel approach for distilling a one-step consistency model.
+            Specifically, we introduce a randomized learning trajectory to improve
+            the model’s robustness to noise. Furthermore, we jointly optimize the
+            one-step model with two time-domain auxiliary losses, enabling it to
+            recover from teacher-induced errors and surpass the teacher model in
+            overall performance. This is the first pure one-step consistency distillation
+            model for diffusion-based speech enhancement, achieving 54 times faster
+            inference speed and superior performance compared to its 30-step teacher
+            model. Experiments on the VoiceBank-DEMAND dataset demonstrate
+            that the proposed model achieves state-of-the-art performance in terms
+            of speech quality. Moreover, its generalization ability is validated on both
+            an out-of-domain dataset and real-world noisy recordings.
           </p>
 
         </div>

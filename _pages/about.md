@@ -53,8 +53,7 @@ IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPA
 
 
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TCSVT 2019</div><img src='images/2019-TCSVT-CBN.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TCSVT 2019</div><img src='images/2019-TCSVT-CBN.png' alt="cascade" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Cascaded Boundary Network for High-Quality Temporal Action Proposal Generation](https://ieeexplore.ieee.org/document/8852682) <br> 
 **Liang Xu**, Xinggang Wang, Wenyu Liu, Bin Feng. <br> 
