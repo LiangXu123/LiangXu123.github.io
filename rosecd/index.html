@@ -216,51 +216,92 @@
         <div class="content has-text-justified">
           <p>Each sample contains six audio versions for comparison: noisy input, clean reference, SGMSE baseline, and three ROSE-CD variants.</p>
 
-          {% for i in (1..2) %}
+          <!-- Sample 1 -->
           <hr>
-          <h4 class="title is-2">Sample {{ i }}</h4>
+          <h4 class="title is-5">Sample 1</h4>
 
           <p><strong>Noisy Input</strong></p>
           <audio controls>
-            <source src="static/audio/vbdmd{{ i }}_noisy.wav" type="audio/wav">
+            <source src="static/audio/vbdmd1_noisy.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
 
           <p><strong>Clean Reference</strong></p>
           <audio controls>
-            <source src="static/audio/vbdmd{{ i }}_clean.wav" type="audio/wav">
+            <source src="static/audio/vbdmd1_clean.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
 
           <p><strong>SGMSE</strong></p>
           <audio controls>
-            <source src="static/audio/vbdmd{{ i }}_sgmse.wav" type="audio/wav">
+            <source src="static/audio/vbdmd1_sgmse.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
 
           <p><strong>ROSE-CD (PESQ only)</strong></p>
           <audio controls>
-            <source src="static/audio/vbdmd{{ i }}_rosecd_pesq.wav" type="audio/wav">
+            <source src="static/audio/vbdmd1_rosecd_pesq.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
 
           <p><strong>ROSE-CD (SI-SDR only)</strong></p>
           <audio controls>
-            <source src="static/audio/vbdmd{{ i }}_rosecd_sisdr.wav" type="audio/wav">
+            <source src="static/audio/vbdmd1_rosecd_sisdr.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
 
           <p><strong>ROSE-CD (Final)</strong></p>
           <audio controls>
-            <source src="static/audio/vbdmd{{ i }}_rosecd_final.wav" type="audio/wav">
+            <source src="static/audio/vbdmd1_rosecd_final.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
-          {% endfor %}
+
+          <!-- Sample 2 -->
+          <hr>
+          <h4 class="title is-5">Sample 2</h4>
+
+          <p><strong>Noisy Input</strong></p>
+          <audio controls>
+            <source src="static/audio/vbdmd2_noisy.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>Clean Reference</strong></p>
+          <audio controls>
+            <source src="static/audio/vbdmd2_clean.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>SGMSE</strong></p>
+          <audio controls>
+            <source src="static/audio/vbdmd2_sgmse.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>ROSE-CD (PESQ only)</strong></p>
+          <audio controls>
+            <source src="static/audio/vbdmd2_rosecd_pesq.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>ROSE-CD (SI-SDR only)</strong></p>
+          <audio controls>
+            <source src="static/audio/vbdmd2_rosecd_sisdr.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>ROSE-CD (Final)</strong></p>
+          <audio controls>
+            <source src="static/audio/vbdmd2_rosecd_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
