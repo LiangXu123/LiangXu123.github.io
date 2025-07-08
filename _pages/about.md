@@ -22,19 +22,36 @@ redirect_from:
 I am currently a PhD student in the School of Engineering and Computer Science at **Victoria University of Wellington** (since March 2025), supervised by [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan). My research focuses on:
 
 - **Diffusion models for speech enhancement**, especially under low-latency, real-time constraints.
-- Broader interests in **signal processing**, **deep generative models**, and **computer vision applications**.
+- Broader interests in **signal processing** and **generative models**.
 
-Prior to my PhD, I obtained a Master’s degree in Information and Communication Engineering from **Huazhong University of Science and Technology (HUST)**, and a Bachelor’s degree in Biomedical Engineering from **Xidian University**. I also worked as a Research Assistant in 2024 at SUSTech on deep learning-based image and video understanding.
+Prior to my PhD, I obtained a Master’s degree in Information and Communication Engineering from **Huazhong University of Science and Technology (HUST)**, and a Bachelor’s degree in Biomedical Engineering from **Xidian University**.
 
 📫 You can reach me at: **liang.xu@vuw.ac.nz**
 
 
 
 # 🔥 News
-<!-- - _2024.02_: &nbsp;🎉🎉 - - papers accepted. See you in -. -->
+- _2025.07_: &nbsp;🎉🎉 - - One paper accepted by [WASPAA 2025](https://waspaa.com/) . See you in California in October, 2025.
 - _2025.03_: &nbsp;🎉🎉 - - Began my PhD at the School of Engineering and Computer Science, Victoria University of Wellington, under the supervision of [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
 
 # 📝 Publications
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">WASPAA 2025</div>
+      <img src='images/2025-WASPAA-ROSECD.png' alt="rose-cd" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+    <a href="https://liangxu123.github.io/rosecd/" target="_blank">
+      Robust One-step Speech Enhancement via Consistency Distillation
+    </a>  \  
+    **Liang Xu**, Longfei Felix Yan, W. Bastiaan Kleijn.  \  
+    IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA), 2025.
+  </div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TCSVT 2019</div><img src='images/2019-TCSVT-CBN.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -69,7 +86,3 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 - 2025.03 - Present, PhD Student in School of Engineering and Computer Science, Victoria University of Wellington, Supervisor: [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
 - _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, HUST, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
 - _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University, Supervisor: [Liyu Huang](https://ieeexplore.ieee.org/author/37086080447)
-
-# 💻 Research Experience
-
-- _2024.04 - 2024.12_, Research Assistant, School of Computer Science, SUST, Supervisor: [Feng Zheng](https://www.sustech.edu.cn/en/faculties/zhengfeng.html)
