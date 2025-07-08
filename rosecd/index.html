@@ -56,11 +56,11 @@
               <span class="author-block">
                 <a href="https://ieeexplore.ieee.org/author/144802245092307">Longfei Felix Yan<sup>1</sup>, </a> </span> <br>
             <span class="author-block">
-              <a href="https://ieeexplore.ieee.org/author/38559192800">Feng Zheng<sup>1</sup>, </a></span>
+              <a href="https://ieeexplore.ieee.org/author/38559192800">W. Bastiaan Kleijn<sup>1</sup>, </a></span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>School of Engineering and Computer Science, Victoria University of Wellington, Wellington 6140, New Zealand</span>
+            <span class="author-block"><sup>1</sup>School of Engineering and Computer Science, Victoria University of Wellington, New Zealand</span>
           </div>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>,</span>
@@ -169,6 +169,24 @@
         <div class="content has-text-justified">
 
           <figure>
+            <img src="static/images/fig1.jpeg" width="850"> 
+            <figcaption> Overview of the proposed robust consistency distillation (RCD).</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds"> 
+        <h2 class="title is-3">Summary of Results Using ROSE-CD</h2>
+        <div class="content has-text-justified">
+
+          <figure>
             <img src="static/images/table1.jpeg" width="850"> 
             <figcaption>Summary of results using ROSE-CD on VB-DMD dataset.</figcaption>
           </figure>
@@ -194,26 +212,56 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds"> 
-        <h2 class="title is-3">Visualizing results for GVC-Seg</h2>
+        <h2 class="title is-3">Audio Samples on VB-DMD Dataset</h2>
         <div class="content has-text-justified">
-          <p> 
-            Video Visualization.
-          </p>
+          <p>Each sample contains six audio versions for comparison: noisy input, clean reference, SGMSE baseline, and three ROSE-CD variants.</p>
+
+          {% for i in (1..5) %}
+          <hr>
+          <h4 class="title is-5">Sample {{ i }}</h4>
+
+          <p><strong>Noisy Input</strong></p>
+          <audio controls>
+            <source src="static/audio/sample{{ i }}_noisy.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>Clean Reference</strong></p>
+          <audio controls>
+            <source src="static/audio/sample{{ i }}_clean.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>SGMSE</strong></p>
+          <audio controls>
+            <source src="static/audio/sample{{ i }}_sgmse.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>ROSE-CD (PESQ only)</strong></p>
+          <audio controls>
+            <source src="static/audio/sample{{ i }}_rosecd_pesq.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>ROSE-CD (SI-SDR only)</strong></p>
+          <audio controls>
+            <source src="static/audio/sample{{ i }}_rosecd_sisdr.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p><strong>ROSE-CD (Final)</strong></p>
+          <audio controls>
+            <source src="static/audio/sample{{ i }}_rosecd_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+          {% endfor %}
         </div>
-        <video controls>
-          <source src="static/images/movie.mp4" type="video/mp4">
-        </video>
-        
-        <style>
-          video {
-            width: 100%;
-            height: auto;
-          }
-        </style>
       </div>
     </div>
   </div>
 </section>
+
 
 
 <section class="section" id="BibTeX">
