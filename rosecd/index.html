@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="GVC-Seg: Training Free 3D Instance Segmentation via  Geometric Visual Correspondence.">
+  <meta name="keywords" content="MaskRCNN, OWIS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GVC-Seg</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+
+
+
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size:38px"> GVC-Seg: Training Free 3D Instance Segmentation <br> via  Geometric Visual Correspondence </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://liangxu123.github.io/">Liang Xu<sup>1</sup>,</a> </span>
+              <span class="author-block">
+                <a href="">Fangjing Wang<sup>1</sup>, </a></span>
+              <span class="author-block">
+                <a href="https://ieeexplore.ieee.org/author/37086284120">Jinyu Yang<sup>2</sup>, </a> </span> <br>
+            <span class="author-block">
+              <a href="https://www.sustech.edu.cn/en/faculties/zhengfeng.html">Feng Zheng<sup>1</sup>, </a></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Southern University of Science and Technology</span>
+            <span class="author-block"><sup>2</sup>tapall.ai</span>
+          </div>
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>,</span>
+          </div> -->
+          <!-- <h2 class="title is-4">2023</h2> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <!-- <a href="../files/papers/UDOS.pdf" -->
+                <a href="https://arxiv.org/abs/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=pYvig8rL_1s"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/LiangXu123/GVC-Seg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span> Code </span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/1SjWUcuSvYMM5rPPd4aQhK0jo1IHbCJbT?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/UDOS_IntroPic.png">
+      <p>
+        Comparison of standard Mask-RCNN, MCG and UDOS for open-world instance segmentation. While standard top-down architectures like MaskRCNN suffer from seen-class bias leading to several missed objects, bottom-up methods result in noisy over-segmentation. UDOS combines the best of both these approaches by using bottom-up proposals as weak supervision inside top-down architectures.
+      </p>
+    </div>
+
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds"> 
+        <!-- <h2 class="title is-3">UDOS for open-world instance segmentation/h2> -->
+        <div class="content has-text-justified">
+
+          <p>
+            We present <b>GVC-Seg</b> , a novel training-free 3D instance segmentation framework. By combining 3D geometric and 2D visual cues in a training-free manner, GVC-Seg prompts more reliable proposal generation and selection, which alleviates the confidence bias of multi-scale, multi-source proposals.
+          </p>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds"> 
+        <h2 class="title is-3">Summary of results using GVC-Seg</h2>
+        <div class="content has-text-justified">
+        <figure>
+          <img src="static/images/QualtResults200.png" width=850> 
+          <figcaption> Summary of results using GVC-Seg on ScanNet200, ScanNet++ and Replica dataset.</figcaption>
+        </figure>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds"> 
+        <h2 class="title is-3">Visualizing results for GVC-Seg</h2>
+        <div class="content has-text-justified">
+          <p> 
+            Video Visualization.
+          </p>
+        </div>
+        <video controls>
+          <source src="static/images/movie.mp4" type="video/mp4">
+        </video>
+        
+        <style>
+          video {
+            width: 100%;
+            height: auto;
+          }
+        </style>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Results. -->
+    <div class="columns is-centered ">
+      <div class="column">
+        <h3 class="title is-4 has-text-centered">Geometric Visual Correspondence</h3>
+        <div class="content has-text-justified">
+          <p>
+            We show a pair of predicted instance masks and confidence scores.
+          </p>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="static/images/GVC.png" class="center" width=1050>
+          </div>
+        </div>          
+
+
+        <h3 class="title is-4 has-text-centered">Qualitative results of different methods on four instances.</h3>
+        <div class="content has-text-justified">
+          <p>
+            The quality of our masks is clearly superior to others.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="static/images/four.png" class="center" width=1050>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @inproceedings{xu2025robust,
+        title={{Robust One-step Speech Enhancement via Consistency Distillation}},
+        author={Xu, Liang and Yan, Longfei Felix and Kleijn, W. Bastiaan},
+        booktitle={2025 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+        pages={1--5},
+        year={2025},
+        organization={IEEE}
+      }
+      ,
+</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            <!-- This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. -->
+            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template and <a href="https://oasisyang.github.io/">Yang Fu</a> for further improving it as part of <a href="https://oasisyang.github.io/semi-pose/">semi-pose</a> project.
+          </p>
+        </div>
+      </div>
+          <p></p>
+        </div>
+      </div>
+</footer>
+
+</body>
+</html>
