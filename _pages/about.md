@@ -47,7 +47,7 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 [Robust One-step Speech Enhancement via Consistency Distillation](https://liangxu123.github.io/rosecd/) <br> 
 **Liang Xu**, Longfei Felix Yan, W. Bastiaan Kleijn. <br> 
 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA), 2025. <br> 
-<!-- [**PDF**](https://yourpdf.link/here.pdf) — Optional -->
+[**PDF**](https://arxiv.org/abs/2507.05688)<br> 
   </div>
 </div>
 
