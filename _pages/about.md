@@ -72,12 +72,9 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 - _2015_ Provincial award of Excellence(College Students Innovation and Entrepreneurship Project), XDU, Xi'an -->
 
 
-<!-- # 🎖 Patents
+# 🎖 BLOGS
 
-- _2019_  “A Cascaded Action Proposal Generation Method and System Based on Action Boundary Probability”<一种基于动作边界概率的级联动作候选框生成方法与系统>
-**Liang Xu**, Bin Feng.
-- _2021_  “Computer Vision-Based Method for Detecting Road Surface Defects”<一种基于计算机视觉技术的道路病害检测方法 > 
-**Liang Xu**, ChengKai Zhu, WeiWu. -->
+- [On the Relationship of Schridinger Bridge and Optimal Transport](https://liangxu123.github.io/blogs/sbot)
 
 
 
