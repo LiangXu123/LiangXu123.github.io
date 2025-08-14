@@ -74,7 +74,7 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 
 # 🎖 BLOGS
 
-- [On the Relationship of Schridinger Bridge and Optimal Transport](https://liangxu123.github.io/blogs/sbot)
+- [On the Relationship between Schrödinger Bridge and Optimal Transport](https://liangxu123.github.io/blogs/sbot)
 
 
 
