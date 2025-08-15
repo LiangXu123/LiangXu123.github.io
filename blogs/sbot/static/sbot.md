@@ -12,7 +12,7 @@ To effectively guide our fireflies, we first need to understand their natural be
 
 It's governed by a simple stochastic differential equation (SDE):
 
-$$dX_t = \epsilon \, dW_t$$
+$$dX_t = \epsilon \ dW_t$$
 
 Here, the change in position ($dX_t$) is driven only by a random Wiener process ($dW_t$) scaled by a noise factor $\epsilon$. This path has no goal and represents maximum uncertainty—a path of pure chaos.
 
@@ -27,10 +27,10 @@ The crucial link between the abstract cost of KL divergence and the physical ene
 #### 1. Defining the Problem
 
 *   **Reference Process R**: Our baseline of pure noise.
-    $$dX_t = \epsilon \, dW_t$$
+    $$dX_t = \epsilon \ dW_t$$
 
 *   **Controlled Process P**: The path we seek. We add a drift term, $u(t, X_t)$, which is the guiding force from our lantern—the control we apply.
-    $$dX_t = u(t, X_t)dt + \epsilon \, dW_t$$
+    $$dX_t = u(t, X_t)dt + \epsilon \ dW_t$$
 
 *   **The Goal**: Find the control $u$ that steers the system from distribution $\mu_0$ to $\mu_1$, while minimizing the KL divergence from the reference process:
     $$\min_{u} KL(P || R)$$
@@ -45,9 +45,9 @@ Girsanov's theorem gives an explicit formula for this log-likelihood when the tw
 
 $$\log\left(\frac{dP}{dR}\right) = \int_0^T \frac{u(t, X_t)}{\epsilon^2} dX_t - \frac{1}{2\epsilon^2} \int_0^T \|u(t, X_t)\|^2 dt$$
 
-Now, watch what happens when we substitute our controlled dynamics ($dX_t = u(t, X_t)dt + \epsilon \, dW_t$) into this equation:
+Now, watch what happens when we substitute our controlled dynamics ($dX_t = u(t, X_t)dt + \epsilon \ dW_t$) into this equation:
 
-$$\log\left(\frac{dP}{dR}\right) = \int_0^T \frac{u(t, X_t)}{\epsilon^2} ( u(t, X_t)dt + \epsilon \, dW_t ) - \frac{1}{2\epsilon^2} \int_0^T \|u(t, X_t)\|^2 dt$$
+$$\log\left(\frac{dP}{dR}\right) = \int_0^T \frac{u(t, X_t)}{\epsilon^2} ( u(t, X_t)dt + \epsilon \ dW_t ) - \frac{1}{2\epsilon^2} \int_0^T \|u(t, X_t)\|^2 dt$$
 
 Distributing the terms gives:
 
