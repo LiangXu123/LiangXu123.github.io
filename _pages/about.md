@@ -72,7 +72,7 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 - _2015_ Provincial award of Excellence(College Students Innovation and Entrepreneurship Project), XDU, Xi'an -->
 
 
-# 🎖 BLOGS
+# 🎖 Blogs
 
 - [On the Relationship between Schrödinger Bridge and Optimal Transport](https://liangxu123.github.io/blogs/sbot)
 
