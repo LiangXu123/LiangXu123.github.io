@@ -75,6 +75,7 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 # 🎖 Blogs
 
 - [On the Relationship between Schrödinger Bridge and Optimal Transport](https://liangxu123.github.io/blogs/sbot)
+- [A Journey to the Fokker-Planck Equation](https://liangxu123.github.io/blogs/fk)
 
 
 
