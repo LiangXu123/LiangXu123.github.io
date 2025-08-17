@@ -18,7 +18,9 @@ $$dX_t = \mu(X_t, t) dt + \sigma(X_t, t) dW_t$$
 
 Think of it like this:
 *   `dX_t` is the tiny step our particle `X` takes at time `t`.
+
 *   `μ(X_t, t) dt` is the **drift**. It's a gentle, deterministic push, like a steady wind guiding the particle.
+
 *   `σ(X_t, t) dW_t` is the **diffusion**. This is the random part—a series of unpredictable kicks. The `dW_t` term is the source of this randomness, a tiny piece of a "Wiener process." The key thing to know about it is that while it averages to zero, its variance is `dt`. This leads to the weird but crucial rule of thumb: `(dW_t)^2 = dt`.
 
 So now we have a rulebook for one particle. But how can we use this to say anything meaningful about the whole system?
