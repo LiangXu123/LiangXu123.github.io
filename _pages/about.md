@@ -31,7 +31,7 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 
 
 # 🔥 News
-- _2025.07_: &nbsp;🎉🎉 - - One paper accepted by [WASPAA 2025](https://waspaa.com/) . See you in California in October, 2025.
+- _2025.07_: &nbsp;🎉🎉 - - One paper accepted by [WASPAA 2025](https://waspaa.com/) as [ORAL](https://waspaa.com/technical-program-schedule/). See you in California in October, 2025.
 - _2025.03_: &nbsp;🎉🎉 - - Began my PhD at the School of Engineering and Computer Science, Victoria University of Wellington, under the supervision of [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
 
 # 📝 Publications
@@ -39,14 +39,14 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">WASPAA 2025</div>
+      <div class="badge">WASPAA 2025 ORAL</div>
       <img src='images/2025-WASPAA-ROSECD.png' alt="rose-cd" width="100%">
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
 [Robust One-step Speech Enhancement via Consistency Distillation](https://liangxu123.github.io/rosecd/) <br> 
 **Liang Xu**, Longfei Felix Yan, W. Bastiaan Kleijn. <br> 
-IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA), 2025. <br> 
+IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA, ORAL), 2025. <br> 
 [**PDF**](https://arxiv.org/abs/2507.05688)<br> 
   </div>
 </div>
