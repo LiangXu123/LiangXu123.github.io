@@ -39,6 +39,21 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
+      <div class="badge">Interspeech 2026 (under review)</div>
+      <img src='images/driftse.png' alt="driftse" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+[Speech Enhancement Based on Drifting Models](https://liangxu123.github.io/driftse/) <br> 
+**Liang Xu**, Diego Caviedes-Nozal, W. Bastiaan Kleijn, Rasmus Kongsgaard Olsson. <br> 
+International Conference on Acoustics, Speech and Signal Processing (Interspeech), 2026 (under review). <br> 
+[**PDF**](https://www.researchgate.net/publication/404224466_Speech_Enhancement_Based_on_Drifting_Models)<br> 
+  </div>
+</div>
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
       <div class="badge">WASPAA 2025 ORAL</div>
       <img src='images/2025-WASPAA-ROSECD.png' alt="rose-cd" width="100%">
     </div>
