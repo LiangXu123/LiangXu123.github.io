@@ -31,6 +31,7 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 
 
 # 🔥 News
+- _2026.06_: &nbsp;🎉🎉 - - One paper accepted by [Interspeech 2026](https://interspeech2026.org/en-AU/pages/author-resources/resources) . See you in Sydney in October.
 - _2025.07_: &nbsp;🎉🎉 - - One paper accepted by [WASPAA 2025](https://waspaa.com/) as [ORAL](https://waspaa.com/technical-program-schedule/). See you in California in October, 2025.
 - _2025.03_: &nbsp;🎉🎉 - - Began my PhD at the School of Engineering and Computer Science, Victoria University of Wellington, under the supervision of [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
 
@@ -39,14 +40,14 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">Interspeech 2026 (under review)</div>
+      <div class="badge">Interspeech 2026</div>
       <img src='images/driftse.png' alt="driftse" width="100%">
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
 [Speech Enhancement Based on Drifting Models](https://liangxu123.github.io/driftse/) <br> 
 **Liang Xu**, Diego Caviedes-Nozal, W. Bastiaan Kleijn, Rasmus Kongsgaard Olsson. <br> 
-International Conference on Acoustics, Speech and Signal Processing (submitted to Interspeech 2026, under review). <br> 
+International Conference on Acoustics, Speech and Signal Processing (Interspeech 2026). <br> 
 [**PDF**](https://www.researchgate.net/publication/404224466_Speech_Enhancement_Based_on_Drifting_Models)<br> 
   </div>
 </div>
