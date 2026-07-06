@@ -48,7 +48,7 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 [Speech Enhancement Based on Drifting Models](https://liangxu123.github.io/driftse/) <br> 
 **Liang Xu**, Diego Caviedes-Nozal, W. Bastiaan Kleijn, Rasmus Kongsgaard Olsson. <br> 
 International Conference on Acoustics, Speech and Signal Processing (Interspeech 2026). <br> 
-[**PDF**](https://www.researchgate.net/publication/404224466_Speech_Enhancement_Based_on_Drifting_Models)<br> 
+[**PDF**](https://arxiv.org/abs/2604.24199)<br> 
   </div>
 </div>
 
