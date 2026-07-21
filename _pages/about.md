@@ -94,3 +94,27 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 - 2025.03 - Present, PhD Student in School of Engineering and Computer Science, Victoria University of Wellington, Supervisor: [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
 - _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, HUST, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
 - _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University, Supervisor: [Liyu Huang](https://ieeexplore.ieee.org/author/37086080447)
+
+<hr>
+
+<h2>🌍 Visitors</h2>
+
+<p>
+  <strong>Page views:</strong>
+  <a href="https://hits.sh/liangxu123.github.io/">
+    <img
+      alt="Page views"
+      src="https://hits.sh/liangxu123.github.io.svg?label=page%20views&color=2563eb"
+    >
+  </a>
+</p>
+
+<p>Visitor locations:</p>
+
+<div style="max-width: 760px; margin: 1rem auto; overflow-x: auto;">
+  <script
+    type="text/javascript"
+    id="mapmyvisitors"
+    src="https://mapmyvisitors.com/map.js?d=z1KBkXH1ZJ_g0nKKzVJVTrPhgbrysRWdb2vQT2BJ-Fo&cl=ffffff&w=a">
+  </script>
+</div>
