@@ -111,7 +111,7 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 
 <p>Visitor locations:</p>
 
-<div style="max-width: 760px; margin: 1rem auto; overflow-x: auto;">
+<div style="width: 100%; max-width: 420px; margin: 1rem auto; text-align: center;">
   <script
     type="text/javascript"
     id="mapmyvisitors"
