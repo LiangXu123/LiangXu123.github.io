@@ -114,11 +114,18 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* Prevent max-width from affecting Google Maps */
+/* Prevent max-width and transitions from affecting Google Maps & MapMyVisitors */
 
 #map_canvas img,
-.google-maps img {
-  max-width: none;
+.google-maps img,
+#mapmyvisitors img,
+[id^="mapmyvisitors"] img,
+[id^="mapmyvisitors"] *,
+.visitor-map-wrapper img,
+.visitor-map-wrapper * {
+  max-width: none !important;
+  box-sizing: content-box !important;
+  transition: none !important;
 }
 
 /* Consistent form font size in all browsers, margin changes, misc */

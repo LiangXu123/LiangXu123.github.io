@@ -110,7 +110,20 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 </p>
 
 <p style="text-align: center;">Visitor locations:</p>
-<div style="width: 100%; max-width: 420px; height: 500px; margin: 1rem auto; display: flex; justify-content: center; align-items: center;">
+<div class="visitor-map-wrapper" style="width: 100%; max-width: 420px; margin: 1rem auto; position: relative; text-align: center; overflow: hidden;">
+  <style>
+    /* Prevent theme CSS resets and transitions from breaking widget coordinates */
+    .visitor-map-wrapper * {
+      box-sizing: content-box !important;
+      transition: none !important;
+    }
+    .visitor-map-wrapper img {
+      max-width: none !important;
+      width: auto !important;
+      height: auto !important;
+      display: inline-block !important;
+    }
+  </style>
   <script
     type="text/javascript"
     id="mapmyvisitors"
