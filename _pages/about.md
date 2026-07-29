@@ -93,7 +93,7 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 
 - 2025.03 - Present, PhD Student in School of Engineering and Computer Science, Victoria University of Wellington, Supervisor: [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
 - _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, HUST, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
-- _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University, Supervisor: [Liyu Huang](https://ieeexplore.ieee.org/author/37086080447)
+- _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University.
 
 <hr>
 
@@ -109,4 +109,24 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
   </a>
 </p>
 
-<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=7YU0oWEf-9wc4YJKDLpJhdG62HvwG2zHH_b2GnYo16s"></script>
+<p style="text-align: center;">Visitor locations:</p>
+<div class="visitor-map-wrapper" style="width: 100%; max-width: 420px; margin: 1rem auto; position: relative; text-align: center; overflow: hidden;">
+  <style>
+    /* Prevent theme CSS resets and transitions from breaking widget coordinates */
+    .visitor-map-wrapper * {
+      box-sizing: content-box !important;
+      transition: none !important;
+    }
+    .visitor-map-wrapper img {
+      max-width: none !important;
+      width: auto !important;
+      height: auto !important;
+      display: inline-block !important;
+    }
+  </style>
+  <script
+    type="text/javascript"
+    id="mapmyvisitors"
+    src="https://mapmyvisitors.com/map.js?d=z1KBkXH1ZJ_g0nKKzVJVTrPhgbrysRWdb2vQT2BJ-Fo&cl=ffffff&w=a">
+  </script>
+</div>
