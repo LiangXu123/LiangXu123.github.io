@@ -109,24 +109,4 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
   </a>
 </p>
 
-<p style="text-align: center;">Visitor locations:</p>
-<div class="visitor-map-wrapper" style="width: 100%; max-width: 420px; margin: 1rem auto; position: relative; text-align: center; overflow: hidden;">
-  <style>
-    /* Prevent theme CSS resets and transitions from breaking widget coordinates */
-    .visitor-map-wrapper * {
-      box-sizing: content-box !important;
-      transition: none !important;
-    }
-    .visitor-map-wrapper img {
-      max-width: none !important;
-      width: auto !important;
-      height: auto !important;
-      display: inline-block !important;
-    }
-  </style>
-  <script
-    type="text/javascript"
-    id="mapmyvisitors"
-    src="https://mapmyvisitors.com/map.js?d=z1KBkXH1ZJ_g0nKKzVJVTrPhgbrysRWdb2vQT2BJ-Fo&cl=ffffff&w=a">
-  </script>
-</div>
+<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=7YU0oWEf-9wc4YJKDLpJhdG62HvwG2zHH_b2GnYo16s"></script>
