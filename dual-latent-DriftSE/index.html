@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="DriftSE: Speech Enhancement with Generative Drifting">
+  <meta name="keywords" content="DriftSE, Speech Enhancement, Generative Drifting, Dual Latent, Diffusion Models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DriftSE: Speech Enhancement with Generative Drifting</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+
+
+
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" style="font-size:38px"> DriftSE: Speech Enhancement with Generative Drifting
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://liangxu123.github.io/">Liang Xu<sup>1</sup>,</a> </span>
+              <span class="author-block">
+                <a href="https://ieeexplore.ieee.org/author/37089156665">Diego Caviedes-Nozal<sup>2</sup>, </a></span>
+              <br>
+              <span class="author-block">
+                <a href="https://ieeexplore.ieee.org/author/38559192800">W. Bastiaan Kleijn<sup>1</sup>, </a></span>
+              <span class="author-block">
+                <a href="https://ieeexplore.ieee.org/author/144802245092307">Longfei Felix Yan<sup>1</sup>, </a> </span>
+              <span class="author-block">
+                <a href="https://ieeexplore.ieee.org/author/38180138400">Rasmus Kongsgaard Olsson<sup>2</sup>
+                </a></span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Submitted to IEEE/ACM TASLP</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>School of Engineering and Computer Science, Victoria University of
+                Wellington, New Zealand</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>2</sup>GN Audio A/S, Denmark</span>
+            </div>
+            <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>,</span>
+          </div> -->
+            <!-- <h2 class="title is-4">2023</h2> -->
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <!-- <a href="../files/papers/UDOS.pdf" -->
+                  <a href="https://arxiv.org/abs/2609.12252" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=pYvig8rL_1s"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/LiangXu123/DriftSE/tree/dual-latent-DriftSE"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span> Code </span>
+                  </a>
+                </span>
+                <!-- Space Link. -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/spaces/LIANGXU123/DriftSE"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:18px">🤗</p>
+                    </span>
+                    <span> Space </span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/1SjWUcuSvYMM5rPPd4aQhK0jo1IHbCJbT?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/UDOS_IntroPic.png">
+      <p>
+        Comparison of standard Mask-RCNN, MCG and UDOS for open-world instance segmentation. While standard top-down architectures like MaskRCNN suffer from seen-class bias leading to several missed objects, bottom-up methods result in noisy over-segmentation. UDOS combines the best of both these approaches by using bottom-up proposals as weak supervision inside top-down architectures.
+      </p>
+    </div>
+
+  </div>
+</section> -->
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <!-- <h2 class="title is-3">UDOS for open-world instance segmentation/h2> -->
+          <div class="content has-text-justified">
+
+            <p>
+              We present <b>DriftSE: Speech Enhancement with Generative Drifting</b>, a novel generative framework that formulates speech enhancement as a distributional equilibrium problem. Rather than relying on iterative sampling or trajectory-based generation, DriftSE natively achieves one-step inference (1 NFE) by evolving the pushforward distribution of a mapping function to directly match the clean speech distribution via a Drifting Field. We introduce <b>Dual Latent Drifting</b>, combining speech semantic encoders (WavLM, HuBERT, DistilHuBERT) with acoustic encoders (BEATs, PANNs) and WavCube-pro for joint semantic-acoustic latents to provide rich, complementary training signals capturing phonetic, acoustic, and structural details. DriftSE natively supports training on fully unpaired noisy/clean speech data, enabling cross-dataset and cross-gender generalization without paired supervision. Extensive experiments on EARS-WHAM (speech denoising) and EARS-REVERB (speech dereverberation) test sets demonstrate that DriftSE achieves state-of-the-art performance across causal and non-causal architectures, outperforming multi-step diffusion and other strong baselines in a single step.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-3">Overview of the proposed DriftSE</h2>
+          <div class="content has-text-justified">
+
+            <figure>
+              <img src="static/images/dual-latent-driftse.png" width="850">
+              <figcaption> Overview of the proposed dual-latent DriftSE framework.</figcaption>
+            </figure>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-3">Summary of Results Using DriftSE</h2>
+          <div class="content has-text-justified">
+
+            <figure>
+              <img src="static/images/table1.jpeg" width="850">
+              <figcaption>Evaluation metrics on EARS-WHAM and EARS-REVERB. Causal indicates a causal architecture, Para denotes parameters in millions, and GMACs denotes total operations (per-step &times; NFE). Best within a group in bold.</figcaption>
+            </figure>
+
+            <figure>
+              <img src="static/images/pca_visualization.jpeg" width="850">
+              <figcaption>Utterance-level PCA visualizations of DriftSE and DriftSEU for denoising (left) and dereverberation (right). Both models align closely in the acoustic PANNs space, but the unpaired variant diverges significantly in the semantic WavLM space. &#9733; denotes cluster centroids, and |&Delta;&mu;| quantifies the distance between generated and clean centroids.</figcaption>
+            </figure>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <!-- VB-DMD Column Block -->
+        <div class="column">
+          <h2 class="title is-4 has-text-centered">VB-DMD Samples</h2>
+          <div class="columns is-multiline">
+            <!-- VB-DMD Sample 1 -->
+            <div class="column is-one-third">
+              <h4 class="title is-6">Sample 1</h4>
+              <p><strong>Noisy Input</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd1_noisy.wav" type="audio/wav">
+              </audio>
+
+              <p><strong>Clean Reference</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd1_clean.wav" type="audio/wav">
+              </audio>
+
+              <p><strong>SGMSE+(30 steps)</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd1_sgmse.wav" type="audio/wav">
+              </audio>
+
+              <p><strong>ROSE-CD</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd1_rosecd_final.wav" type="audio/wav">
+              </audio>
+              <p><strong>DriftSE</strong></p>
+              <audio controls>
+                <source src="static/audio/p257_272.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <!-- VB-DMD Sample 2 -->
+            <div class="column is-one-third">
+              <h4 class="title is-6">Sample 2</h4>
+              <p><strong>Noisy Input</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd2_noisy.wav" type="audio/wav">
+              </audio>
+
+              <p><strong>Clean Reference</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd2_clean.wav" type="audio/wav">
+              </audio>
+
+              <p><strong>SGMSE+(30 steps)</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd2_sgmse.wav" type="audio/wav">
+              </audio>
+
+              <p><strong>ROSE-CD</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd2_rosecd_final.wav" type="audio/wav">
+              </audio>
+              <p><strong>DriftSE</strong></p>
+              <audio controls>
+                <source src="static/audio/p257_356.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <!-- VB-DMD Sample 3 -->
+            <div class="column is-one-third">
+              <h4 class="title is-6">Sample 3</h4>
+              <p><strong>Noisy Input</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd3_noisy.wav" type="audio/wav">
+              </audio>
+
+              <p><strong>Clean Reference</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd3_clean.wav" type="audio/wav">
+              </audio>
+
+              <p><strong>SGMSE+(30 steps)</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd3_sgmse.wav" type="audio/wav">
+              </audio>
+              <p><strong>ROSE-CD</strong></p>
+              <audio controls>
+                <source src="static/audio/vbdmd3_rosecd_final.wav" type="audio/wav">
+              </audio>
+              <p><strong>DriftSE</strong></p>
+              <audio controls>
+                <source src="static/audio/p257_067.wav" type="audio/wav">
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end top-level columns -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <!-- DNS300 Column Block -->
+        <div class="column">
+          <h2 class="title is-4 has-text-centered">Unpaired Samples</h2>
+          <div class="columns is-multiline">
+            <!-- DNS300 Sample 1 -->
+            <div class="column is-one-third">
+              <h4 class="title is-6">Sample 1</h4>
+              <p><strong>Noisy Input</strong></p>
+              <audio controls>
+                <source src="static/audio/p232_001.wav" type="audio/wav">
+              </audio>
+              <p><strong>DriftSE (paired)</strong></p>
+              <audio controls>
+                <source src="static/audio/p232_001.driftse.wav" type="audio/wav">
+              </audio>
+              <p><strong>DriftSE (unpaired, map to VB-Female)</strong></p>
+              <audio controls>
+                <source src="static/audio/p232_001.unpairded.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <!-- DNS300 Sample 2 -->
+            <div class="column is-one-third">
+              <h4 class="title is-6">Sample 2</h4>
+              <p><strong>Noisy Input</strong></p>
+              <audio controls>
+                <source src="static/audio/p232_402.wav" type="audio/wav">
+              </audio>
+              <p><strong>DriftSE (paired)</strong></p>
+              <audio controls>
+                <source src="static/audio/p232_402.driftse.wav" type="audio/wav">
+              </audio>
+              <p><strong>DriftSE (unpaired, map to VB-Female)</strong></p>
+              <audio controls>
+                <source src="static/audio/p232_402.unpaired.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <!-- DNS300 Sample 3 -->
+            <div class="column is-one-third">
+              <h4 class="title is-6">Sample 3</h4>
+              <p><strong>Noisy Input</strong></p>
+              <audio controls>
+                <source src="static/audio/p232_021.wav" type="audio/wav">
+              </audio>
+              <p><strong>DriftSE (paired)</strong></p>
+              <audio controls>
+                <source src="static/audio/p232_021.driftse.wav" type="audio/wav">
+              </audio>
+              <p><strong>DriftSE (unpaired, map to VB-Female)</strong></p>
+              <audio controls>
+                <source src="static/audio/p232_021.unpaired.wav" type="audio/wav">
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end top-level columns -->
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{xu2026driftse,
+  author    = {Liang Xu and Diego Caviedes-Nozal and W. Bastiaan Kleijn and Longfei Felix Yan and Rasmus Kongsgaard Olsson},
+  title     = {Speech Enhancement Based on Drifting Models},
+  booktitle = {Proc. Interspeech 2026},
+  year      = {2026}
+}
+
+@article{xu2026driftsespeechenhancementgenerative,
+  author  = {Xu, Liang and Caviedes-Nozal, Diego and Kleijn, W. Bastiaan and Yan, Longfei Felix and Olsson, Rasmus Kongsgaard},
+  title   = {Speech Enhancement with Generative Drifting},
+  journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  year    = {2026},
+  note    = {Submitted},
+}
+    </code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              <!-- This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. -->
+              This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+              We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this
+              template and <a href="https://oasisyang.github.io/">Yang Fu</a> for further improving it as part of <a
+                href="https://oasisyang.github.io/semi-pose/">semi-pose</a> project.
+            </p>
+          </div>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

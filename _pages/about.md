@@ -39,6 +39,21 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
+      <div class="badge">TASLP 2026</div>
+      <img src='images/dual-latent-driftse.png' alt="dual-latent-driftse" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+[DriftSE: Speech Enhancement with Generative Drifting](https://liangxu123.github.io/dual-latent-DriftSE/) <br>
+**Liang Xu**, Diego Caviedes-Nozal, W. Bastiaan Kleijn, Longfei Felix Yan, Rasmus Kongsgaard Olsson. <br>
+IEEE/ACM Transactions on Audio, Speech, and Language Processing (Submitted, 2026). <br>
+[**PDF**](https://arxiv.org/abs/2609.12252)<br>
+  </div>
+</div>
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
       <div class="badge">Interspeech 2026</div>
       <img src='images/driftse.png' alt="driftse" width="100%">
     </div>
