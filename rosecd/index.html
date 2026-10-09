@@ -473,6 +473,33 @@
     </div>
   </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var bibtexBlocks = document.querySelectorAll('#BibTeX pre');
+      bibtexBlocks.forEach(function(pre) {
+        var wrapper = document.createElement('div');
+        wrapper.style.position = 'relative';
+        pre.parentNode.insertBefore(wrapper, pre);
+        wrapper.appendChild(pre);
+        var button = document.createElement('button');
+        button.className = 'button is-small is-light';
+        button.style.position = 'absolute';
+        button.style.top = '10px';
+        button.style.right = '10px';
+        button.innerHTML = '<span class="icon"><i class="fas fa-copy"></i></span><span>Copy</span>';
+        button.addEventListener('click', function() {
+          var code = pre.querySelector('code').innerText.trim();
+          navigator.clipboard.writeText(code).then(function() {
+            button.innerHTML = '<span class="icon"><i class="fas fa-check"></i></span><span>Copied!</span>';
+            setTimeout(function() {
+              button.innerHTML = '<span class="icon"><i class="fas fa-copy"></i></span><span>Copy</span>';
+            }, 2000);
+          });
+        });
+        wrapper.appendChild(button);
+      });
+    });
+  </script>
 </body>
 
 </html>
