@@ -41,14 +41,14 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">ICASSP 2027</div>
+      <div class="badge">ICASSP 2027 (Submitted)</div>
       <img src='images/un_driftse.jpeg' alt="unsupervised-driftse" width="100%">
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
 [Unsupervised Speech Enhancement via Drifting](https://d-caviedes.github.io/unpaired-drifting-se/) <br>
 Diego Caviedes-Nozal, **Liang Xu**, Rasmus Kongsgaard Olsson, W. Bastiaan Kleijn. <br>
-IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2027). <br>
+IEEE International Conference on Acoustics, Speech and Signal Processing (Submitted 2027). <br>
 [**Read Paper**](https://arxiv.org/pdf/2609.34662)<br>
   </div>
 </div>
@@ -56,7 +56,7 @@ IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">TASLP 2026</div>
+      <div class="badge">TASLP 2026 (Submitted)</div>
       <img src='images/dual-latent-driftse.png' alt="dual-latent-driftse" width="100%">
     </div>
   </div>
@@ -71,7 +71,7 @@ IEEE/ACM Transactions on Audio, Speech, and Language Processing (Submitted, 2026
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">Interspeech 2026</div>
+      <div class="badge">Interspeech 2026 Oral</div>
       <img src='images/driftse.png' alt="driftse" width="100%">
     </div>
   </div>
