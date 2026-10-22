@@ -30,12 +30,28 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 
 # 🔥 News
 
-- _2026.09_: &nbsp;🚀🚀 - - Submitted **[DriftSE: Speech Enhancement with Generative Drifting](https://liangxu123.github.io/dual-latent-DriftSE/)** to IEEE/ACM TASLP.
+- _2026.09_: &nbsp;🚀🚀 - - Submitted **[Unsupervised Speech Enhancement via Drifting](https://d-caviedes.github.io/unpaired-drifting-se/)** to IEEE ICASSP 2027.
+- _2026.09_: &nbsp;🚀🚀 - - Submitted **[DriftSE: Speech Enhancement with Generative Drifting](https://liangxu123.github.io/dual-latent-DriftSE/)** to IEEE/ACM TASLP 2026.
 - _2026.06_: &nbsp;🎉🎉 - - One paper on **[Speech Enhancement Based on Drifting Models](https://liangxu123.github.io/driftse/)** accepted by [Interspeech 2026](https://interspeech2026.org/en-AU/pages/author-resources/resources) as [Oral](https://interspeech2026.org/en-AU/pages/programme/program). See you in Sydney in October.
 - _2025.07_: &nbsp;🎉🎉 - - One paper accepted by [WASPAA 2025](https://waspaa.com/) as [Oral](https://waspaa.com/technical-program-schedule/). See you in California in October, 2025.
 - _2025.03_: &nbsp;🎉🎉 - - Began my PhD at the School of Engineering and Computer Science, Victoria University of Wellington, under the supervision of [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
 
 # 📝 Publications
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">ICASSP 2027</div>
+      <img src='images/un_driftse.jpeg' alt="unsupervised-driftse" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+[Unsupervised Speech Enhancement via Drifting](https://d-caviedes.github.io/unpaired-drifting-se/) <br>
+Diego Caviedes-Nozal, **Liang Xu**, Rasmus Kongsgaard Olsson, W. Bastiaan Kleijn. <br>
+IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2027). <br>
+[**Read Paper**](https://arxiv.org/pdf/2609.34662)<br>
+  </div>
+</div>
 
 <div class='paper-box'>
   <div class='paper-box-image'>
