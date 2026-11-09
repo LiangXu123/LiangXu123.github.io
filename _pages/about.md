@@ -30,7 +30,7 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 
 # 🔥 News
 
-- _2026.09_: &nbsp;🚀🚀 - - Submitted **[Unsupervised Speech Enhancement via Drifting](https://d-caviedes.github.io/unpaired-drifting-se/)** to IEEE ICASSP 2027.
+- _2026.09_: &nbsp;🚀🚀 - - **[Diego](https://scholar.google.com/citations?user=xgTq-KEAAAAJ&hl=en)** Submitted **[Unsupervised Speech Enhancement via Drifting](https://d-caviedes.github.io/unpaired-drifting-se/)** to IEEE ICASSP 2027.
 - _2026.09_: &nbsp;🚀🚀 - - Submitted **[DriftSE: Speech Enhancement with Generative Drifting](https://liangxu123.github.io/dual-latent-DriftSE/)** to IEEE/ACM TASLP 2026.
 - _2026.06_: &nbsp;🎉🎉 - - **[Speech Enhancement Based on Drifting Models](https://liangxu123.github.io/driftse/)** accepted by [Interspeech 2026](https://interspeech2026.org/en-AU/pages/author-resources/resources) as [Oral](https://interspeech2026.org/en-AU/pages/programme/program). See you in Sydney in October.
 - _2025.07_: &nbsp;🎉🎉 - - **[Robust One-step Speech Enhancement via Consistency Distillation](https://liangxu123.github.io/rosecd/)** accepted by [WASPAA 2025](https://waspaa.com/) as [Oral](https://waspaa.com/technical-program-schedule/). See you in California in October, 2025.
