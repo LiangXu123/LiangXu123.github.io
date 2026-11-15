@@ -19,7 +19,7 @@ redirect_from:
 
 # 👋 About Me
 
-I am currently a PhD student in the School of Engineering and Computer Science at **Victoria University of Wellington** (since March 2025), supervised by [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan). My research focuses on:
+I am currently a PhD student in the School of Engineering and Computer Science at **Victoria University of Wellington** (since March 2025), supervised by [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn). My research focuses on:
 
 - **Diffusion models for speech enhancement**, especially under low-latency, real-time constraints.
 - Broader interests in **signal processing** and **generative models**.
@@ -31,7 +31,7 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 # 🔥 News
 
 - _2026.09_: &nbsp;🚀🚀 - - **[Diego](https://scholar.google.com/citations?user=xgTq-KEAAAAJ&hl=en)** Submitted **[Unsupervised Speech Enhancement via Drifting](https://d-caviedes.github.io/unpaired-drifting-se/)** to IEEE ICASSP 2027.
-- _2026.09_: &nbsp;🚀🚀 - - Submitted **[DriftSE: Speech Enhancement with Generative Drifting](https://liangxu123.github.io/dual-latent-DriftSE/)** to IEEE/ACM TASLP 2026.
+- _2026.09_: &nbsp;🚀🚀 - - I've Submitted **[DriftSE: Speech Enhancement with Generative Drifting](https://liangxu123.github.io/dual-latent-DriftSE/)** to IEEE/ACM TASLP 2026.
 - _2026.06_: &nbsp;🎉🎉 - - **[Speech Enhancement Based on Drifting Models](https://liangxu123.github.io/driftse/)** accepted by [Interspeech 2026](https://interspeech2026.org/en-AU/pages/author-resources/resources) as [Oral](https://interspeech2026.org/en-AU/pages/programme/program). See you in Sydney in October.
 - _2025.07_: &nbsp;🎉🎉 - - **[Robust One-step Speech Enhancement via Consistency Distillation](https://liangxu123.github.io/rosecd/)** accepted by [WASPAA 2025](https://waspaa.com/) as [Oral](https://waspaa.com/technical-program-schedule/). See you in California in October, 2025.
 - _2025.03_: &nbsp;🎉🎉 - - Began my PhD at the School of Engineering and Computer Science, Victoria University of Wellington, under the supervision of [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
@@ -123,8 +123,8 @@ IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019. <b
 
 # 📖 Educations
 
-- 2025.03 - Present, PhD Student in School of Engineering and Computer Science, Victoria University of Wellington, Supervisor: [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
-- _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, HUST, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400) and [Xinggang Wang](https://xwcv.github.io/).
+- 2025.03 - Present, PhD Student in School of Engineering and Computer Science, Victoria University of Wellington, Supervisor: [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn).
+- _2016.09 - 2019.06_, M.S(research-based) in Information & Communication Engineering, HUST, Supervisor: [Bin Feng](https://ieeexplore.ieee.org/author/37290322400).
 - _2012.09 - 2016.06_, B.S in Biomedical-Engineering, Xidian University.
 
 <hr>
