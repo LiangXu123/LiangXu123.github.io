@@ -34,7 +34,7 @@ Prior to my PhD, I obtained a Master’s degree in Information and Communication
 - _2026.09_: &nbsp;🚀🚀 - - I've Submitted **[DriftSE: Speech Enhancement with Generative Drifting](https://liangxu123.github.io/dual-latent-DriftSE/)** to IEEE/ACM TASLP 2026.
 - _2026.06_: &nbsp;🎉🎉 - - **[Speech Enhancement Based on Drifting Models](https://liangxu123.github.io/driftse/)** accepted by [Interspeech 2026](https://interspeech2026.org/en-AU/pages/author-resources/resources) as [Oral](https://interspeech2026.org/en-AU/pages/programme/program). See you in Sydney in October.
 - _2025.07_: &nbsp;🎉🎉 - - **[Robust One-step Speech Enhancement via Consistency Distillation](https://liangxu123.github.io/rosecd/)** accepted by [WASPAA 2025](https://waspaa.com/) as [Oral](https://waspaa.com/technical-program-schedule/). See you in California in October, 2025.
-- _2025.03_: &nbsp;🎉🎉 - - Began my PhD at the School of Engineering and Computer Science, Victoria University of Wellington, under the supervision of [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn) and [Felix Yan](https://people.wgtn.ac.nz/felix.yan).
+- _2025.03_: &nbsp;🎉🎉 - - Began my PhD at the School of Engineering and Computer Science, Victoria University of Wellington, under the supervision of [Bastiaan Kleijn](https://people.wgtn.ac.nz/bastiaan.kleijn).
 
 # 📝 Publications
 
